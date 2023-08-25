@@ -6,13 +6,10 @@
 	<artifactId>Addition</artifactId>
 	<version>${releaseVersion}</version>
 	<packaging>jar</packaging>
-	
-	<name>${artifactId}-${version}</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<sonar.host.url>http://3.84.135.178:9000</sonar.host.url>
 	</properties>
 
 	<build>
@@ -40,6 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
 	<profiles>
 		<profile>
 			<id>jacoco</id>
@@ -112,5 +110,4 @@
 		</profile>
 	
 	</profiles>
-
 </project>
